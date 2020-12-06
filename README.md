@@ -35,8 +35,9 @@ zork = 69105;
 // Common mistake: declaring & assigning a new variable,
 // instead of assigning an outer-scope variable
 zork: string = "in-joke";
+
 if {
-		zork := "69105";
+    zork := "69105";
 }
 ```
 
