@@ -4,14 +4,14 @@
 
 ### Module Handling
 
-The two extremes are **the** **bulkiness & rigidity of C/C++** and **the** **unpredictable flexibility & granularity of JavaScript:**
+The two extremes are **the bulkiness & rigidity of C/C++ modules** and **the unpredictable flexibility & granularity of JavaScript libraries:**
 
-- C/C++ which compiler-coupled header files evolved from serving as an interface with an OS to unreadable, impossible to refactor and often redundant high-level precompiled libraries;
-- JavaScript which updates the dependencies at runtime with all the new versions of its minuscule libraries. As a result, a year-old code will certainly be crashing down on you.
+- With C/C++, compiler-coupled header files evolved from serving as an interface with an OS to unreadable, impossible to refactor and often redundant high-level precompiled libraries;
+- With JavaScript, the dependencies are updated at runtime with all the new versions of its minuscule libraries. As a result, a year-old code will certainly be crashing down on you.
 
-The solution is having modules and build subfolders in your app folder preserving the compatibility and putting the control in the hands of a programmer instead of a PL or an OS. 
+The solution is having a modules and a build subfolder in your app folder preserving the compatibility and putting the control in the hands of a programmer instead of a PL or an OS. 
 
-The meta-programming options for module handling that Jai offers is a compromise between updating system headers and sticking to your modules subfolder.
+The meta-programming options for module handling that Jai offers is a compromise between updating system headers and using your modules subfolder.
 
 After the Beta Release, different options for module handling will, in part, make it easier for people to exchange module code and also write meta-programs to download modules from a server.
 
