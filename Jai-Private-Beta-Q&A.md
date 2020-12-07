@@ -1,4 +1,4 @@
-# Jonathan Blow — Q&amp;A Discussion with Jai Private Beta Users. Date: 12.05.2020
+# Jonathan Blow — Q&amp;A Discussion with Jai Private Beta Users (12.05.2020)
 
 ## Part I. Jon's Notes on the Latest Features
 
