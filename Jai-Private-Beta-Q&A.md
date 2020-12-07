@@ -1,4 +1,4 @@
-# Jonathan Blow — Q&amp;A Discussion with Jai Private Beta Users
+# Jonathan Blow — Q&amp;A Discussion with Jai Private Beta Users (12.05.20)
 
 ## Part I. Jon's Notes on the Latest Features
 
