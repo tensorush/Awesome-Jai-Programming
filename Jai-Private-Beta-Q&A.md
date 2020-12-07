@@ -4,10 +4,10 @@
 
 ### Module Handling
 
-The two extremes are **the bulkiness & rigidity of C/C++ modules** and **the unpredictable flexibility & granularity of JavaScript libraries:**
+The two extremes are **the bulkiness & rigidity of C/C++ modules** and **the unpredictability & granularity of JavaScript libraries:**
 
-- With C/C++, compiler-coupled header files evolved from serving as an interface with an OS to unreadable, impossible to refactor and often redundant high-level precompiled libraries;
-- With JavaScript, the dependencies are updated at runtime with all the new versions of its minuscule libraries. As a result, a year-old code will certainly be crashing down on you.
+- In C/C++ compiler-coupled header files evolved from serving as an interface with an OS to unreadable, impossible to refactor and often redundant high-level precompiled libraries;
+- In JavaScript the dependencies are updated at runtime with all the new versions of its minuscule libraries. As a result, a year-old code will certainly be crashing down on you.
 
 The solution is having a modules and a build subfolder in your app folder preserving the compatibility and putting the control in the hands of a programmer instead of a PL or an OS. 
 
