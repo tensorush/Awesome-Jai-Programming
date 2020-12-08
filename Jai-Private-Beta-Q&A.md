@@ -1,5 +1,6 @@
 # First Q&amp;A Discussion with Jai Private Beta Users (12.05.2020)
-![YouTube](http://www.androidpolice.com/wp-content/uploads/2013/11/nexusae0_unnamed_thumb14.png) [YouTube Link](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
+[YouTube Video](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
+[Twitch Stream](https://www.twitch.tv/videos/826727768)
 
 ## Part I. Jon's Notes on the Latest Features
 
