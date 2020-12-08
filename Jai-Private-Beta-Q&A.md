@@ -1,6 +1,5 @@
 # First Q&amp;A Discussion with Jai Private Beta Users (12.05.2020)
-
-[Youtube Link:](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
+#[Youtube Link](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
 
 ## Part I. Jon's Notes on the Latest Features
 
