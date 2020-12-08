@@ -1,9 +1,6 @@
 # First Q&amp;A Discussion with Jai Private Beta Users (12.05.2020)
-[![YouTube](https://img.shields.io/badge/YouTube%20sorce-red?logo=youtube)](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
-
-[YouTube Video](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
-
-[Twitch Stream](https://www.twitch.tv/videos/826727768)
+[![YouTube](https://img.shields.io/badge/YouTube%20Video-red?logo=youtube)](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
+[![Twitch](https://img.shields.io/badge/Twitch%20Stream-blueviolet?logo=twitch)](https://www.twitch.tv/videos/826727768)
 
 ## Part I. Jon's Notes on the Latest Features
 
