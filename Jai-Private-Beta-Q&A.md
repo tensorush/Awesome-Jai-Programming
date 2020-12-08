@@ -1,4 +1,5 @@
 # First Q&amp;A Discussion with Jai Private Beta Users (12.05.2020)
+[![YouTube](https://img.shields.io/badge/YouTube%20sorce-red?logo=youtube)](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
 
 [YouTube Video](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
 
