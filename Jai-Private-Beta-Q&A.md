@@ -242,6 +242,6 @@ Same as in C, it's a struct with a slot and an enum in it, which you happen to k
 
 If meaning to interpret x64 machine code, then — no. But if meaning to JIT compile and run that — it's feasible.
 
-### 39) Strong Type Deaths
+### 39) Strong Typedefs
 
 There are no right now, but they will be added.
