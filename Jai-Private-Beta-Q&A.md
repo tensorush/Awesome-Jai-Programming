@@ -1,4 +1,4 @@
-# Jonathan Blow — Q&amp;A Discussion with Jai Private Beta Users (12.05.2020)
+# First Q&amp;A Discussion with Jai Compiler Private Beta Users (12.05.2020)
 
 ## Part I. Jon's Notes on the Latest Features
 
@@ -17,11 +17,11 @@ After the Beta Release, different options for module handling will, in part, mak
 
 ### Selective Module Compiling
 
-It would be helpful to compile only the modules that are being used from the internal and external libraries. This would require parsing everything, which can be fast, as opposed to type checking and code generation, which take longer.
+It would be helpful to compile only the modules that are being used from both the internal and external libraries. This would require parsing everything, which can be fast, as opposed to type checking and code generation, which take longer.
 
 ### Meta-Program Checking Warnings
 
-While compiling a meta-program run to check the program with minimal compiler warnings. The warnings are implemented as a user-level library.
+While compiling a meta-program runs to check the program with minimal compiler warnings. The warnings are implemented as a user-level library.
 
 As of now, some basic things are not checked for, though, such as implicit casts:
 
@@ -73,20 +73,20 @@ Just like an object, a closure is a certain instantiated thing with certain data
 
 In C++ a closure is essentially a functor struct with an overloaded parenthesis operator, which means it's not actually a function type, so any time you need a negative function or a closure, you need that special thing. And, of course, in C++ a member function is also a different type, so you have C-style functions, member functions and closures which are totally different things.
 
-The way to avoid it is by having all the standard function type in a language be a fat pointer so that every function has a data pointer that it can refer to. For example, talking about allocators, you always pass an allocator and allocator data, because you might have several different heaps, the same allocator as a heap-handling function and allocator data as a pointer to the base of a heap, which is different for all those heaps. So, even without closures very often you want to have a data pointer be a function pointer type, which is also true with thread safety in general.
+The way to avoid it is by having the standard function type in a language be a fat pointer so that every function has a data pointer that it can refer to. For example, talking about allocators, you always pass an allocator and allocator data, because you might have several different heaps, the same allocator as a heap-handling function and allocator data as a pointer to the base of a heap, which is different for all those heaps. So, even without closures very often you want to have a data pointer be a function pointer type, which is also true with thread safety in general.
 
-Historically, in C if you wanted to do Q-Sort and you needed more data, you would make your Q-Sort function read global variables with extra values, which is bad for thread safety. So you put the extra data into thread-local storage, which is a hit on performance and not without its own error proclivity.
+Historically, in C if you wanted to do Q-Sort and you needed more data, you would make your Q-Sort function read global variables with extra values, which is bad for thread safety. So you put the extra data into thread-local storage, which is a hit on performance and not without its own error tendencies.
 
 ### 7) Possible Changes
 
 - Autocast;
 - Dereferencing pointers;
 - Implicit Casting: adding an implicit pointer dereference, which isn't scary with a compile-time check for it, just like an array bounds check;
-- Later on, the plans are to do a "Question Everything" approach to syntax, especially with places where most mistakes occur.
+- Later on, the plans are to do a "Question Everything" approach to syntax, especially in places where most mistakes occur.
 
 ### 8) Standard Meta-Program
 
-The structure is to be figured out. Right now, the compiler distribution includes the Basic module with the compiler essentials with some side modules like Vulkan.
+The structure is to be figured out. Right now, the compiler distribution includes the Basic module with the compiler essentials and some side modules like Vulkan.
 
 ### 9) Code Hot Loading
 
@@ -100,11 +100,11 @@ Good code should be as general as possible and handle as many situations as poss
 
 The idea is to make a macro or a function for that. First, the macro system has to have more powerful features, though.
 
-The two options are having universal struct literal syntax for either the ones with static or with dynamic values. The current idea is to leave literals as is and later see whether to add dynamic initialization through a macro or build into the compiler.
+The two options are having universal struct literal syntax for either the ones with static or with dynamic values. The current idea is to leave literals as is and later see whether to add dynamic initialization through a macro or build it into the compiler.
 
 ### 12) Sockets
 
-Not available yet as Thekla, Inc., apart from a Jai compiler, is currently developing a single-player Sokoban-type game, but it would definitely be great to have some time later together with a networking module.
+Not available yet as Thekla, Inc., apart from a Jai compiler, is currently developing a single-player Sokoban-type game, but it would definitely be great to have sockets together with a networking module some time later.
 
 ### 13) Single Underscore
 
@@ -140,11 +140,11 @@ Different languages have different threading primitives and most languages optim
 
 The hard problem is how to actually use all of the processors' cores. If you do something like co-routines or the like — these are not high-performance constructs.
 
-Concurrency can be a rigorous computer science term or it can be a way to avoid saying parallelism when parallelism is what you care about in all practical cases. This reflects in many languages having all of the concurrency primitives, but really no parallelism help at all.
+Concurrency can be a rigorous computer science term or it can be a way to avoid saying parallelism when parallelism is what you actually care about in all practical cases. This reflects in many languages having all of the concurrency primitives, but really no parallelism help at all.
 
 ### 19) Complex Numbers & 16-bit Half-precision Float
 
-Presently, no intention to add any of these. Scalars is really the point to stop, for all the rest you have structs. The other one is becoming popular on some hardware, however it doesn't matter too much right this second.
+Presently, no intention to add any of these. Scalars is really the point to stop, for all the rest you have structs. The 16-bit half-precision float is becoming popular on some hardware, however it doesn't matter too much right this second.
 
 ### 20) Debugging
 
@@ -152,7 +152,7 @@ Jon uses Remedy to debug the compiler. Long-term goal is to provide some default
 
 ### 21) Graphics Engine
 
-The custom graphics engine that has evolved through the production of The Witness and is currently employed for the development of the Sokoban game will be given out for free with the stripped down version of the latter game, enough to play around, but not to duplicate the game.
+The custom graphics engine that has evolved through the production of The Witness and is currently employed for the development of the Sokoban game will be given out for free with the stripped down version of the latest game, enough to play around, but not to duplicate the game.
 
 ### 22) Autocast
 
@@ -163,7 +163,7 @@ People complain about the type conversion compilation errors when porting games 
 There are several reasons for that default choice:
 
 - Big enough not to worry about overflow;
-- Enables to load 2 GB files;
+- Enables to load 2+ GB files;
 - Signed to avoid underflowing surprises.
 
 That being said it is better to use smaller numbers in a data structure that gets frequently instanced. 
@@ -172,11 +172,11 @@ One of the big mistakes of C is not being able to identify the size of an intege
 
 ### 24) LLVM Backend
 
-LLVM Backend will remain a supporting part of the Jai compiler for the foreseeable future, even though its a giant, expensive cargo aeroplane of modules. In addition, as of right now, the LLVM does Auto Vectorization and Hand Vectorization is to be added.
+LLVM Backend will remain a supporting part of the Jai compiler for the foreseeable future, even though its a giant, expensive cargo aeroplane of modules. In addition, as of right now, the LLVM does Auto Vectorization, but Hand Vectorization is still to be added.
 
 ### 25) Intrinsics
 
-Implemenе AVX-512 instructions by injecting some Inline Assembly into your Jai code.
+The better idea is to avoid writing intrinsics and instead implement AVX-512 instructions by injecting some Inline Assembly into your Jai code.
 
 ### 26) Memory Safety
 
@@ -192,7 +192,7 @@ The default meta-program could be taking some options and there wouldn't be extr
 
 ### 29) Building Libraries
 
-You can already build libraries statically or DLL, same as C binaries. You would lose the power of the language, though. If a function is compiled, you can't polymorph it or bake the arguments, the meta program can't inspect it either.
+You can already build libraries statically or DLL, same as C binaries. You would lose the power of the language, though. If a function is compiled, you can't polymorph it or bake the arguments and the meta program can't inspect it either.
 
 ### 30) Compile Speed
 
@@ -232,7 +232,7 @@ C++ sure suffers from a lot of bad operator overloading. However, there's also g
 
 ### 36) Removed Feature
 
-Memory ownership on data structures because you shouldn't have that many independently managed pieces of memory. It's bad to malloc a ton of nodes to remember membership or ownership about. It's much better to have temporary storage, where we don't worry about ownership, rather we track it.
+Memory ownership on data structures was removed because you shouldn't have that many independently managed pieces of memory. It's bad to malloc a ton of nodes to remember membership or ownership about. It's much better to have temporary storage, where we don't worry about ownership, rather we track it.
 
 ### 37) Discriminated Union
 
