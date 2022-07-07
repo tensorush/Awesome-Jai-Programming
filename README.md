@@ -1,5 +1,7 @@
-# :clipboard: Notes on the key features of the Jai Compiler discussed between Jonathan Blow, the creator of the Jai Programming Language, and the Jai Beta Users.
+# :jigsaw: :lotus_position: Jai Compiler Sessions
 
-## :nerd_face: The purpose of this repo is to host my notes on the most recent developments in the Jai Compiler for personal reference as well as for the educational benefit of whoever may find these curious.
+## :writing_hand: Session notes of the most recent Jai compiler developments.
 
-## :hugs: *Any contributions, corrections or suggestions are very welcome!*
+> ### :hugs: *Any contributions, corrections or suggestions are very welcome!*
+
+## [:one: First Private Beta Session](https://github.com/tensorush/Jai-Compiler-Sessions/blob/main/20-05-12-First-Private-Beta-Session.md)

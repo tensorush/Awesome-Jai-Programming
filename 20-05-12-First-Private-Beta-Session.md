@@ -1,33 +1,32 @@
-# First Q&amp;A Discussion with Jai Private Beta Users (12.05.2020)
-[![YouTube](https://img.shields.io/badge/YouTube%20Video-red?logo=youtube)](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
-[![Twitch](https://img.shields.io/badge/Twitch%20Stream-blueviolet?logo=twitch)](https://www.twitch.tv/videos/826727768)
+# :one: First Private Beta Session (12.05.2020) [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
 
-## Part I. Jon's Notes on the Latest Features
+## Part I. Latest Features Overview
 
-### Module Handling
+### 1) Module Handling
 
 The two extremes are **the bulkiness & rigidity of C/C++ modules** and **the unpredictability & granularity of JavaScript libraries:**
 
-- In C/C++ compiler-coupled header files evolved from serving as an interface with an OS to unreadable, impossible to refactor and often redundant high-level precompiled libraries;
+- In C/C++ compiler-coupled header files evolved from serving as an interface with an OS to unreadable, impossible to refactor and often redundant high-level pre-compiled libraries;
+
 - In JavaScript the dependencies are updated at runtime with all the new versions of its minuscule libraries. As a result, a year-old code will certainly be crashing down on you.
 
-The solution is having a modules and a build subfolder in your app folder preserving the compatibility and putting the control in the hands of a programmer instead of a PL or an OS. 
+The solution is having a modules and a build subfolder in your app folder preserving the compatibility and putting the control in the hands of a programmer instead of a PL or an OS.
 
 The meta-programming options for module handling that Jai offers is a compromise between updating system headers and using your modules subfolder.
 
 After the Beta Release, different options for module handling will, in part, make it easier for people to exchange module code and also write meta-programs to download modules from a server.
 
-### Selective Module Compiling
+### 2) Selective Module Compiling
 
 It would be helpful to compile only the modules that are being used from both the internal and external libraries. This would require parsing everything, which can be fast, as opposed to type checking and code generation, which take longer.
 
-### Meta-Program Checking Warnings
+### 3) Meta-Program Checking Warnings
 
 While compiling a meta-program runs to check the program with minimal compiler warnings. The warnings are implemented as a user-level library.
 
 As of now, some basic things are not checked for, though, such as implicit casts:
 
-```jsx
+```c
 // Declare & assign a variable with type inference
 zork: 69105;
 
@@ -43,7 +42,7 @@ if {
 }
 ```
 
-## Part II. Q&A Discussion
+## Part II. Q&A Session
 
 ### 1) Allocators
 
@@ -124,7 +123,7 @@ Launching a Wiki is an option.
 
 Procedure Declaration Notes could be upgraded to a strongly typed version of notes and not only be string notes, but also struct literals. With such an upgrade namespace collisions would be handled correctly.
 
-```jsx
+```c
 // Procedure declaration notes can be put on declarations and structs
 private_beta = true; @b1                     // String note
 open_beta = false;   @@Type{Field: Variable} // Potential struct literal
@@ -168,7 +167,7 @@ There are several reasons for that default choice:
 - Enables to load 2+ GB files;
 - Signed to avoid underflowing surprises.
 
-That being said it is better to use smaller numbers in a data structure that gets frequently instanced. 
+That being said it is better to use smaller numbers in a data structure that gets frequently instanced.
 
 One of the big mistakes of C is not being able to identify the size of an integer, for example.
 
@@ -204,7 +203,7 @@ To all the game industry, if you want your game to run fast, the last thing that
 
 For example, compile time of C++ is largely dominated by including massively redundant header files and then deduplicating that massively redundant information at link time. But even without that it wouldn't be too fast because it's writing all those files out to disk and then linking them.
 
-Jai could be made faster still by parallelizing the compiler, which isn't easy. 
+Jai could be made faster still by parallelizing the compiler, which isn't easy.
 
 ### 31) Error Reporting
 
@@ -218,7 +217,7 @@ Right now there are parsing report errors if they occur in different files.
 
 ### 32) Entry Point
 
-Like if there's a hashbang at the top of a file, then the default is no output. A better solution is to set a variable that we started with a hashbang and the default meta-program can, then, set the build type to no output.
+Like if there's a shebang at the top of a file, then the default is no output. A better solution is to set a variable that we started with a shebang and the default meta-program can, then, set the build type to no output.
 
 ### 33) Targeting Consoles
 
