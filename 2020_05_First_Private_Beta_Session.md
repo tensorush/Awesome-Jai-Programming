@@ -1,4 +1,4 @@
-# :one: First Private Beta Session (12.05.2020) [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
+# :one: First Private Beta Session (May 2020) [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=Wp9XD5FKZ2c)
 
 ## Part I. Latest Features Overview
 
@@ -89,7 +89,7 @@ Historically, in C if you wanted to do Q-Sort and you needed more data, you woul
 
 The structure is to be figured out. Right now, the compiler distribution includes the Basic module with the compiler essentials and some side modules like Vulkan.
 
-### 9) Code Hot Loading
+### 9) Hot Code Reloading
 
 Here you start getting into the OS or workflow details that can go wrong. Someone could do it as a meta-program, the goal is to make such things as easy as possible.
 
@@ -111,7 +111,7 @@ Not available yet as Thekla, Inc., apart from a Jai compiler, is currently devel
 
 Single underscore is currently employed as a variable like in C, but could possibly be changed to serve as a blank identifier for junk values like in Golang, if enough people want it.
 
-### 14) User corrections
+### 14) User Corrections
 
 Typo fixes and decentralized content additions are very welcome.
 
@@ -223,7 +223,7 @@ Like if there's a shebang at the top of a file, then the default is no output. A
 
 Yes, there are plans. Console vendors generally don't like someone talking about these things. The currently developed game under Jai will probably ship on multiple consoles.
 
-### 34) Multi-platform Graphics Engine API
+### 34) Multi-Platform Graphics Engine API
 
 Yes!
 
