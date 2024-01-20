@@ -1,6 +1,6 @@
 # :sunglasses: :joystick: Awesome Jai Learning
 
-## :writing_hand: Session notes of the most recent Jai compiler developments.
+## :writing_hand: Collection of live stream notes on the most recent Jai compiler developments.
 
 > Sadly, I don't have the time now to keep up with these. Any contributions would be very welcome! 🤗
 
