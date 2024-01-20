@@ -1,4 +1,4 @@
-# :sunglasses: :joystick: Awesome Jai Sessions
+# :sunglasses: :joystick: Awesome Jai Learning
 
 ## :writing_hand: Session notes of the most recent Jai compiler developments.
 
