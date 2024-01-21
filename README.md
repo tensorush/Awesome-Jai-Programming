@@ -1,4 +1,4 @@
-# :sunglasses: :joystick: Awesome Jai Learning
+# :sunglasses: :joystick: Awesome Jai Programming
 
 ## :writing_hand: Collection of live stream notes on the most recent Jai compiler developments.
 
